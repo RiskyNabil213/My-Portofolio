@@ -49,8 +49,8 @@ const Skills = () => {
         name: 'React', 
         level: 90,
         description: 'Library JavaScript untuk membangun UI',
-        experience: '2+ tahun pengalaman',
-        projects: '5+ proyek',
+        experience: '1 tahun pengalaman',
+        projects: '4+ proyek',
         icon: (
           <div className="w-10 h-10 bg-gradient-to-br rounded-xl flex items-center justify-center">
             <div className="relative w-10 h-10">
@@ -117,7 +117,7 @@ const Skills = () => {
         level: 80,
         description: 'JavaScript dengan sintaks tipe',
         experience: 'Type safety expert',
-        projects: 'Semua proyek terbaru',
+        projects: '3 proyek',
         icon: (
           <div className="w-10 h-10 bg-gradient-to-br  rounded-xl flex items-center justify-center">
             <div className="relative w-10 h-10">
@@ -150,7 +150,7 @@ const Skills = () => {
         level: 92,
         description: 'Framework CSS utility-first',
         experience: 'Styling utama',
-        projects: '6+ proyek',
+        projects: '5+ proyek',
         icon: (
           <div className="w-10 h-10 bg-gradient-to-br  rounded-xl flex items-center justify-center">
             <div className="relative w-12 h-12">
@@ -183,7 +183,7 @@ const Skills = () => {
         level: 88,
         description: 'Bahasa pemrograman web',
         experience: 'Fundamental kuat',
-        projects: '10+ proyek',
+        projects: '5+ proyek',
         icon: (
           <div className="w-10 h-10 rounded-xl flex items-center justify-center">
             <div className="relative w-10 h-10">

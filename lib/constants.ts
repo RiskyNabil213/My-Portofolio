@@ -37,8 +37,8 @@ export const projects = [
     id: 1,
     title: 'Web Development Competition',
     description: 'Sebuah kompetisi pengembangan web yang menantang peserta untuk membuat aplikasi web interaktif menggunakan teknologi terbaru dengan subtema melestarikan budaya.',
-    technologies: ['Next.js', 'TypeScript', 'Tailwind CSS', 'Chart.js', 'React Query'],
-    image: '/images/projects/web-competition.jpg',
+    technologies: ['Next.js', 'TypeScript', 'Tailwind CSS','React Query'],
+    image: '/images/image.png',
     screenshots: [
       '/images/projects/iitc-1.jpg',
       '/images/projects/iitc-2.jpg',
@@ -48,8 +48,8 @@ export const projects = [
     live: 'https://website-iitc.vercel.app/',
     featured: true,
     role: 'Frontend Developer & Team Lead',
-    duration: '2 Bulan',
-    teamSize: '5 Orang',
+    duration: '1 Bulan',
+    teamSize: '3 Orang',
     highlights: [
       'Juara 3 Web Development Competition',
       'Implementasi teknologi modern',
@@ -61,8 +61,8 @@ export const projects = [
     id: 2,
     title: 'Last Project Frontend Development',
     description: 'Sebuah proyek terakhir yang menunjukkan kemampuan saya dalam pengembangan frontend modern dipadukan dengan mata pelajaran kewirausahaan.',
-    technologies: ['Next.js', 'TypeScript', 'Tailwind CSS', 'Chart.js', 'React Query'],
-    image: '/images/projects/bromo-project.jpg',
+    technologies: ['Next.js', 'TypeScript', 'Tailwind CSS','React Query'],
+    image: '/images/WebBromo.png',
     screenshots: [
       '/images/projects/bromo-1.jpg',
       '/images/projects/bromo-2.jpg',
@@ -71,7 +71,7 @@ export const projects = [
     github: 'https://github.com/RiskyNabil213/WebBromo',
     live: 'https://web-bromo.vercel.app',
     featured: false,
-    role: 'Fullstack Developer',
+    role: 'FrontEnd Developer',
     duration: '1 Bulan',
     teamSize: 'Individu',
     highlights: [
@@ -83,21 +83,46 @@ export const projects = [
   },
   {
     id: 3,
-    title: 'Personal Portfolio Website',
-    description: 'Website portofolio personal yang dibangun dengan teknologi modern untuk showcase skill dan proyek.',
-    technologies: ['Next.js', 'TypeScript', 'Tailwind CSS', 'Framer Motion'],
-    image: '/images/projects/portfolio.jpg',
+    title: 'EcoGuardAi',
+    description: 'Sebuah kompetisi Business Plan yang menantang peserta untuk mengembangkan solusi inovatif dalam bidang teknologi hijau dengan subtema pelestarian lingkungan.',
+    technologies: ['Next.js', 'TypeScript', 'Tailwind CSS',],
+    image: '/images/ecoguard.png',
     screenshots: [
       '/images/projects/portfolio-1.jpg',
       '/images/projects/portfolio-2.jpg',
       '/images/projects/portfolio-3.jpg'
     ],
     github: 'https://github.com/RiskyNabil213',
-    live: 'https://yourportfolio.vercel.app',
+    live: 'https://ecoguard.canadev.my.id',
     featured: true,
     role: 'Solo Developer',
-    duration: '2 Minggu',
-    teamSize: 'Individu',
+    duration: 'Tim Minggu',
+    teamSize: 'Tim',
+    highlights: [
+      '100% Lighthouse Score',
+      'SEO Optimized',
+      'Mobile First Design'
+    ],
+    category: 'Personal'
+  },
+
+  {
+    id: 4,
+    title: 'UJSTravel',
+    description: 'Sebuah Project dari pesanan client.',
+    technologies: ['HTML', 'JavaScipt', 'Tailwind CSS',],
+    image: '/images/UJS.png',
+    screenshots: [
+      '/images/projects/portfolio-1.jpg',
+      '/images/projects/portfolio-2.jpg',
+      '/images/projects/portfolio-3.jpg'
+    ],
+    github: 'https://github.com/RiskyNabil213',
+    live: 'https://www.ujstravelmalangjuanda.com/',
+    featured: true,
+    role: 'Tim Developer',
+    duration: '1 Bulan',
+    teamSize: 'Tim',
     highlights: [
       '100% Lighthouse Score',
       'SEO Optimized',
@@ -166,7 +191,7 @@ export const socialLinks = {
   linkedin: 'https://linkedin.com/in/nabil-risky',
   instagram: 'https://instagram.com/nabilrisky_',
   email: 'mailto:nabilrisky390@gmail.com',
-  whatsapp: 'https://wa.me/6281234567890'
+  whatsapp: 'https://wa.me/6285790519397'
 };
 
 export const personalInfo = {

@@ -3,6 +3,7 @@
 import { projects } from '@/lib/constants';
 import { ExternalLink, Github, Eye } from 'lucide-react';
 import { useState } from 'react';
+import Image from 'next/image'; // Import Next.js Image component
 
 const Projects = () => {
   const [activeFilter, setActiveFilter] = useState('all');
@@ -49,14 +50,30 @@ const Projects = () => {
             >
               {/* Project Image */}
               <div className="relative h-48 bg-gradient-to-br from-blue-100 to-purple-100 overflow-hidden">
-                <div className="absolute inset-0 flex items-center justify-center">
-                  <div className="text-5xl">
-                    {project.title.charAt(0)}
+                {project.image ? (
+                  // Jika ada gambar, tampilkan gambar
+                  <Image
+                    src={project.image}
+                    alt={project.title}
+                    fill
+                    className="object-cover group-hover:scale-110 transition-transform duration-500"
+                    sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                  />
+                ) : (
+                  // Fallback: jika tidak ada gambar, tampilkan placeholder
+                  <div className="absolute inset-0 flex items-center justify-center">
+                    <div className="text-5xl">
+                      {project.title.charAt(0)}
+                    </div>
                   </div>
-                </div>
-                <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                )}
+                
+                {/* Overlay gradient */}
+                <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                
+                {/* Featured badge */}
                 {project.featured && (
-                  <div className="absolute top-4 left-4 px-3 py-1 bg-gradient-to-r from-yellow-400 to-orange-400 text-white text-sm font-bold rounded-full">
+                  <div className="absolute top-4 left-4 px-3 py-1 bg-gradient-to-r from-yellow-400 to-orange-400 text-white text-sm font-bold rounded-full z-10">
                     Featured
                   </div>
                 )}
